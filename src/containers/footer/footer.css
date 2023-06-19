@@ -1,0 +1,144 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-footer);
+    padding: 4rem 6rem;
+}
+
+.footer-heading{
+    width: 100%;
+    text-align: center;
+}
+
+.footer-heading h1{
+    font-family: var(--font-family);
+    font-size: 62px;
+    line-height: 75px;
+    font-weight:800;
+    background:linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn{
+    margin-top: 3rem;
+    outline: none;
+    border: 2px solid #fff;
+    padding: 12px;  
+    font-size: 18px;  
+    background-color: var(--color-footer);
+    color: white;
+    cursor: pointer;
+}
+
+.footer-container{
+    max-width: 1400px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.footer-container-part{
+    width: calc(25% - 10px);
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.footer-container-part h1{
+    color:#fff;
+    font-family: var(--font-family);
+    font-weight:800;
+    font-size: 40px;
+}
+
+.footer-container-part p{
+    color: #fff;
+    font-family: var(--font-family);
+    font-size:14px;
+}
+
+.footer-container-part h3{
+    margin-top: 15px;
+    color: #fff;
+    font-family: var(--font-family);
+}
+
+.footer-container-part .ulist{
+    list-style: none;
+    margin-top: 15px;
+}
+
+.footer-container-part .ulist li{
+    margin-bottom: 7px;
+}
+
+.footer-container-part .ulist li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight:400;
+    font-family: var(--font-family);
+
+}
+
+.margin{
+    margin-top: 15px;
+    line-height: 2;
+}
+
+.footer-copyright{
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-top: 2rem;
+}
+
+.footer-copyright p{
+    color:#fff;
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+}
+
+@media screen and (max-width:1050px){
+
+    .footer-container{
+        max-width: 1200px;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-left:80px;
+    }
+
+    .footer-container-part{
+        width: calc(50% - 10px);
+        padding: 40px;
+    }
+    
+}
+
+@media screen and (max-width:650px){
+
+    .footer{
+        padding: 2rem;
+    }
+
+    .footer-container-part{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .btn{
+        padding: 10px;  
+        font-size: 14px;  
+    }
+
+    .footer-heading h1{
+        font-size:30px;
+        line-height:35px;
+    }
+}

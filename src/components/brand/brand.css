@@ -1,0 +1,25 @@
+.brand{
+    width: 100%;
+    padding: 20px;
+}
+
+.brand-body{
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.brand-body div{
+    max-width: 150px;
+    min-width: 120px;
+    flex: 1;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

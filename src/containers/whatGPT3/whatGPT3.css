@@ -1,0 +1,189 @@
+.whatgpt{
+    display: flex;
+    flex-direction: column;
+    padding:5rem;
+    background-color:rgba(4,44,84,255);
+    margin: 4rem;
+}
+
+.whatgpt-feature{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    
+}
+
+.whatgpt-feature-title{
+  max-width: 500px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.underline{
+    width: 100px;
+    height: 3px;
+    background:linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+}
+
+.underline2{
+    width: 38px;
+    height: 4px;
+    background:linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    margin-bottom: 25px;
+}
+
+.whatgpt-feature-title h1{
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.whatgpt-feature-text p{
+    color: var(--color-text);
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.whatgpt-head{
+    margin-top:40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.whatgpt-head h2{
+    font-size: 6vh;
+    font-weight: 700;
+    background:linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    /* line-height: 2; */
+    -webkit-text-fill-color: transparent;
+}
+
+.whatgpt-head p{
+    color: rgba(245,135,112,255);
+    margin-top:40px;
+    font-size: 18px;
+}
+
+.whatgpt-body{
+    width: 100%;
+    padding: 20px;
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.whatgpt-body-part{
+    width: calc(33.33% - 5px);
+    padding: 10px;
+    margin: 4px;
+}
+
+.whatgpt-body-part h2{
+    color:white;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.whatgpt-body-part p{
+    font-size: 20px;
+    color:var(--color-text);
+    line-height:1.5;
+}
+
+@media screen and (max-width:1050px) {
+
+      .whatgpt-head h2{
+        font-size:5vh;
+        line-height:1;
+
+    }
+
+    .underline{
+        width: 50px;
+    }
+
+    .whatgpt-head{
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* margin-left:90px; */
+    }
+
+    .whatgpt-head h2{
+        line-height:40px;
+        font-size:30px;
+    }
+
+    .whatgpt-head p{
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+
+    .whatgpt-body{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .whatgpt-body-part{
+       width: 100%;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    .whatgpt-feature{
+       flex-wrap: wrap;
+    }
+
+    .underline{
+        width: 50px;
+    }
+
+    .whatgpt-body{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .whatgpt-body-part{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    
+    .whatgpt-feature{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .whatgpt{
+        margin:35px;
+        padding: 2rem;
+    }
+
+    .whatgpt-body{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .whatgpt-body-part{
+        width: 100%;
+    }
+
+    .whatgpt-head h2{
+    font-size: 27px;
+    line-height: 35px;
+    }
+
+    .whatgpt-head{
+        margin:40px 20px 0 25px;
+    }
+
+
+
+    
+}
+

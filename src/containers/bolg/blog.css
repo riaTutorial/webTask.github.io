@@ -1,0 +1,89 @@
+.blog{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 6rem;
+}
+
+.blog-head{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.blog-head h1{
+    font-family: var(--font-family);
+    font-size:62px;
+    line-height:80px;
+    font-weight:800;
+    letter-spacing: -0.04rem;
+    background:linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blog-container{
+ display: flex;
+ /* background-color: gold; */
+ width: 100%;
+ padding: 10px;
+}
+
+.blog-container-groupA{
+    flex:0.75;
+    margin-right: 2rem;
+    /* background-color: green;
+    padding: 10px; */
+}
+
+.blog-container-groupB{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    /* background-color: palegoldenrod;
+    padding: 10px; */
+}
+
+@media screen and (max-width: 990px)
+{
+    .blog-container{
+        flex-direction: column-reverse;
+    }
+
+    .blog-container-groupA{
+        margin: 2rem 0;
+    }
+
+    .blog-container-groupA .article{
+         width: 48%;
+    }
+
+    .blog-container-groupA .article-image{
+        height: 250px;
+    }    
+}
+
+@media screen and (max-width: 700px)
+{
+    .blog-container-groupB{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .blog-container-groupA .article{
+        width: 100%;
+   }
+
+   .blog-head{
+    font-size: 46px;
+    line-height: 52px;
+   }
+
+}
+
+@media screen and (max-width: 550px)
+{
+   .blog-head{
+    font-size: 34px;
+    line-height: 42px;
+   }
+
+}

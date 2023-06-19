@@ -1,0 +1,75 @@
+.cta{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background:linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 4rem;
+    /* flex-wrap: wrap; */
+}
+
+.cta-container p{
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: #0E0E0E;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.cta-container h3{
+    font-family: var(--font-family);
+    font-weight: 800;
+    color: #000000;
+    font-size: 24px;
+    line-height: 45px;
+}
+
+.cta-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.cta-button button{
+    min-width: 150px;
+    background-color:#000000;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius:40px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-size:18px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+    .cta
+    {
+        flex-direction: column;
+    }    
+    .cta-button
+    {
+        margin: 2rem 0 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .cta
+    {
+        margin: 4rem 2rem;
+    }    
+    .cta-container h3
+    {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .cta-button button
+    {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
